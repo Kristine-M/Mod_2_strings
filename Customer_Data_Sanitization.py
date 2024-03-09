@@ -34,3 +34,16 @@ def val_email(email_list):
 # first three letters of their first name and the first three 
 # letters of their last name. If the name is shorter than three letters, 
 # use the full name. Ensure all usernames are in lowercase.
+
+first = input("Enter first name")
+last = input ("Enter last name")
+
+def username(first, last):
+    user = ""
+    if len(first) < 3:
+        user = first.lower()
+    else:
+        user = first[:3] + last[:3]
+        user = user.lower()
+        
+    return user
